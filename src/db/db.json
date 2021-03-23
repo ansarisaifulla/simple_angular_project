@@ -1,0 +1,54 @@
+{
+  "restaurants": [
+    {
+      "name": "burger king king",
+      "email": "kaartech",
+      "address": "tathawade",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "pizzeria",
+      "address": "wakad",
+      "email": "kaartech"
+    },
+    {
+      "id": 5,
+      "name": "burger barn",
+      "address": "camp",
+      "email": "kaartech"
+    },
+    {
+      "name": "Saif dhaba",
+      "email": "kaartech.com",
+      "address": "vaishali",
+      "id": 6
+    },
+    {
+      "name": "Afrin pani puri",
+      "email": "kaartech.com",
+      "address": "warora",
+      "id": 7
+    },
+    {
+      "name": "Naturals",
+      "email": "naturals.com",
+      "address": "chinchwad",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "saif",
+      "email": "ansari@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Saif",
+      "email": "h@gmail.com",
+      "password": "",
+      "id": 2
+    }
+  ]
+}
