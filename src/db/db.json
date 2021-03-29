@@ -1,40 +1,40 @@
 {
   "restaurants": [
     {
-      "name": "burger king king",
+      "name": "bbq misal",
       "email": "kaartech",
-      "address": "tathawade",
+      "address": "Baner",
+      "id": 1
+    },
+    {
+      "name": "KFC",
+      "email": "kaartech",
+      "address": "pune",
+      "id": 2
+    },
+    {
+      "name": "Pizzeria",
+      "email": "kaartech",
+      "address": "pcmc",
       "id": 3
     },
     {
-      "id": 4,
-      "name": "pizzeria",
-      "address": "wakad",
-      "email": "kaartech"
+      "name": "absolute bbq",
+      "email": "kaartech",
+      "address": "pimpiri",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "burger barn",
-      "address": "camp",
-      "email": "kaartech"
+      "name": "Joshi wada wale",
+      "email": "kaartech",
+      "address": "Akurdi",
+      "id": 5
     },
     {
-      "name": "Saif dhaba",
-      "email": "kaartech.com",
-      "address": "vaishali",
+      "name": "PUBG cafe",
+      "email": "kaartech",
+      "address": "lonavla",
       "id": 6
-    },
-    {
-      "name": "Afrin pani puri",
-      "email": "kaartech.com",
-      "address": "warora",
-      "id": 7
-    },
-    {
-      "name": "Naturals",
-      "email": "naturals.com",
-      "address": "chinchwad",
-      "id": 8
     }
   ],
   "users": [
@@ -49,6 +49,13 @@
       "email": "h@gmail.com",
       "password": "",
       "id": 2
+    },
+    {
+      "name": "wacxs",
+      "email": "as",
+      "password": "qxsa",
+      "address": "qxas",
+      "id": 3
     }
   ]
 }

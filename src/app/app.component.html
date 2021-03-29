@@ -1,32 +1,23 @@
+
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MyResto</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+  aria-controls="navbarNav" (click)="isShown = !isShown" [attr.aria-expanded]="isShown"
+     aria-label="Toggle navigation">
+     <!-- aria-expanded="false" -->
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{ 'show': isShown }" >
     <ul class="navbar-nav ml-auto ">
-      <li class="nav-item "><a class="nav-link" routerLink="list">list</a></li>
-      <li class="nav-item "><a class="nav-link " routerLink="add">Add-Resto</a>  </li>
-      <!-- <li class="nav-item "><a class="nav-link" routerLink="update">Update</a></li> -->
-      <li class="nav-item "><a class="nav-link" routerLink="login">login</a></li>
-      <li class="nav-item "><a class="nav-link" routerLink="register">Register-User</a></li>
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">login</a>
-      </li> -->
+      <li class="nav-item "><a class="nav-link" routerLink="list">LIST</a></li>
+      <li *ngIf="loggedIn()" class="nav-item "><a class="nav-link " routerLink="add">ADD-RESTO</a> </li>
+      <li *ngIf="!loggedIn()" class="nav-item "><a class="nav-link" routerLink="login">LOGIN</a></li>
+      <li *ngIf="!loggedIn()" class="nav-item "><a class="nav-link" routerLink="register">REGISTER-USER</a></li>
+      <li *ngIf="loggedIn()" class="nav-item "><a class="nav-link" href="#" (click)="onLogout()">LOGOUT</a></li>
+
     </ul>
   </div>
 </nav>
-
-
 
 
 <router-outlet></router-outlet>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormControl} from '@angular/forms';
+import {FormGroup,FormControl,NgForm} from '@angular/forms';
 import { RestoService } from './../resto.service';
 import {Router} from '@angular/router';
 @Component({
@@ -9,44 +9,38 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  // login=new FormGroup({
-  //   email:new FormControl(''),
-  //   password:new FormControl('')
-  // });
   collection:any=[];
-  email:string;
-  pass:string;
   alert1:boolean=false;
   alert2:boolean=false;
-
+  flag:any=0;
   constructor(private resto:RestoService,private _router: Router) { }
 
   ngOnInit(): void {
   }
-  loginUser()
-  {
+ 
+  onLogin(loginForm:NgForm){
+    console.log(loginForm.value);
     this.resto.getUser().subscribe((result )=>{
-      console.warn("result is here",result);
       this.collection=result;
       this.collection.forEach(element => {
-        if(this.email==element.email && this.pass==element.password)
+        if(loginForm.value.email==element.email && loginForm.value.password==element.password)
         {
-          this._router.navigate(['list'])
+          
+          localStorage.setItem('token',loginForm.value.email);
           this.alert1=true;
+          this._router.navigate(['list']);
           return;
+          
         }
-        else
-        {
-          this.alert2=true;
-          return;
-        }
+       
       });
+      if(!this.alert1)
+      {
+        this.alert2=true;
+      }
      
 
     });
-    
-    
-    
   }
   closeAlert1()
   {

@@ -1,4 +1,15 @@
+*{
+    font-family: 'OpenSans-Regular'!important;
+}
 .nav-link{
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 18px;
     color: rgb(255 255 255)!important;
+}
+.nav-link:hover{
+    font-weight: 500;
+}
+.nav-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
