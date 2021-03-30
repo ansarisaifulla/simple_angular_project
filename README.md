@@ -5,10 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-Install JSON Server
+# Install JSON Server
 
-npm install -g json-server
-Create a db.json file with some data
+ npm install -g json-server.
+
+# Create a db.json file with some data
 
 {
   "posts": [
@@ -19,7 +20,8 @@ Create a db.json file with some data
   ],
   "profile": { "name": "typicode" }
 }
-Start JSON Server
+# Navigate to the folder in which you created db file and then
+# Start JSON Server
 
 json-server --watch db.json
 
