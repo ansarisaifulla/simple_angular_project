@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
  npm install -g json-server.
 
-# Create a db.json file with some data
+## Create a db.json file with some data
 
 {
   "posts": [
@@ -20,10 +20,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
   ],
   "profile": { "name": "typicode" }
 }
-# Navigate to the folder in which you created db file and then
-# Start JSON Server
+## Navigate to the folder in which you created db file and then
+## Start JSON Server
 
 json-server --watch db.json
+## Now if you go to http://localhost:3000/, you'll get your json server data.
+
+
 
 ## Code scaffolding
 
