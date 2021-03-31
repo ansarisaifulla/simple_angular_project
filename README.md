@@ -8,8 +8,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 # Install JSON Server
 
  npm install -g json-server.
-
-## Create a db.json file with some data
+## create a db folder in src folder of project(project_name->src->db->db.json), and inside that db folder create db.json file .
+## Navigate to db folder using terminal or command prompt and start your json server by typing "json-server --watch db.json" in cmd/terminal.
 
 {
   "posts": [
